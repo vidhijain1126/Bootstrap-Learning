@@ -1,0 +1,36 @@
+        .custom-shape-divider-bottom-1714980762 {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            line-height: 0;
+            transform: rotate(180deg);
+            z-index: -1;
+            padding: 0px;
+        }
+
+        .custom-shape-divider-bottom-1714980762 svg {
+            position: relative;
+            width: calc(100% + 1.3px);
+            height: 15%;
+        }
+
+        .custom-shape-divider-bottom-1714980762 .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        #hero {
+            height: 90vh;
+        }
+
+        .crd-shadow:hover {
+            box-shadow: 0 00.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .refbg {
+            background-image: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url(../images/pexels-photo-316093.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
