@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-dark text-light m-0 p-0 overflow-x-hidden">
     <nav class="navbar navbar-expand-lg p-3 fs-6">
         <div class="container">
             <a class="navbar-brand fw-bold text-light" href="#">Demo</a>
@@ -52,7 +51,7 @@
     </nav>
 
     <section id="hero" class="position-relative d-flex justify-content-center align-items-center overflow-hidden">
-        <div class="row d-flex justify-content-center align-items-center p-3 text-justify h-100">
+        <div class="row d-flex justify-content-center align-items-center text-justify">
             <div class="col-xxl-4 col-lg-4 col-md-10 col-sm-10 d-flex flex-column order-2 order-lg-1">
                 <h2 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis
@@ -70,11 +69,10 @@
             <div
                 class="col-xxl-5 col-lg-5 col-md-8 col-sm-8 ms-xl-4 d-flex justify-content-center align-items-lg-center order-1 order-lg-2">
                 <video src="images/hero.mp4" autoplay muted loop
-                    class="w-lg-100 w-xxl-100 w-xl-100 w-75 rounded"></video>
+                    class="w-75 rounded"></video>
             </div>
-            <div class="custom-shape-divider-bottom-1714980762">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
+            <div class="custom-shape-divider-bottom-1714980762 w-100 position-absolute bottom-0">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                         class="shape-fill"></path>
@@ -83,7 +81,7 @@
         </div>
     </section>
 
-    <section id="services" class="bg-white text-dark py-4">
+    <section id="services" class="bg-white text-dark py-5">
         <h2 class="text-center fw-bold">What We Will Do For <br> Your Business</h2>
         <hr class="w-25 m-auto">
         <div class="container">
@@ -144,7 +142,7 @@
             </div>
     </section>
 
-    <section id="referal" class="refbg p-lg-5 p-2">
+    <section id="referal" class="refbg p-lg-5 p-4">
         <div class="container p-lg-5 p-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-xxl-6 col-lg-6 col-10 d-flex justify-content-center"><img src="images/phone.gif"
@@ -161,9 +159,9 @@
         </div>
     </section>
 
-    <section id="services" class="bg-white text-dark py-4">
+    <section id="services" class="bg-white text-dark py-5">
         <div class="container">
-            <h2 class="text-center fw-bold">Lorem ipsum dolor sit amet</h2>
+            <h2 class="text-center fw-bold">Lorem ipsum dolor <br>sit amet</h2>
             <hr class="w-25 m-auto">
             <div class="row">
                 <div class="col-lg-6 col-12 my-3">
@@ -211,95 +209,431 @@
         </div>
     </section>
 
-    <section id="testimonial">
-        <div class="container text-center p-4">
-            <h2 class="common-heading text-white">What Client Say<br>About Us</h2>
+    <section id="testimonial" class="d-none d-lg-block">
+        <div class="container text-center p-5">
+            <h2 class="fw-bold">What Client Say<br>About Us</h2>
             <hr class="w-25 mx-auto mb-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="..." class="card-img-top"
+                                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur.</p>
+                                            <div class=" mt-3 d-flex justify-content-center  fw-light px-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-regular.svg" class="w-25 p-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="..." class="card-img-top"
+                                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                            <div class=" mt-3 d-flex justify-content-center px-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-regular.svg" class="w-25 p-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="..." class="card-img-top"
+                                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                            <div class=" mt-3 d-flex justify-content-center px-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-regular.svg" class="w-25 p-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="..." class="card-img-top"
+                                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                            <div class=" mt-3 d-flex justify-content-center px-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-regular.svg" class="w-25 p-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="..." class="card-img-top"
+                                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                            <div class=" mt-3 d-flex justify-content-center px-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-regular.svg" class="w-25 p-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="..." class="card-img-top"
+                                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                            <div class=" mt-3 d-flex justify-content-center px-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-solid.svg" class="w-25 p-2">
+                                                <img src="./images/star-regular.svg" class="w-25 p-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-inner row">
-                    <div class="col-lg-4 col-11">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="card  p-3" style="width: 18rem;">
-                                <img alt="..." class="card-img-top"
-                                    src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                                <div class="card-body text-center">
-                                    <p class="card-title  mb-3">Angelina Thapa</p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <div class="d-flex justify-content-center">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-11">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="card  p-3" style="width: 18rem;">
-                                <img alt="..." class="card-img-top"
-                                    src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                                <div class="card-body text-center">
-                                    <p class="card-title  mb-3">Lorem, ipsum dolor.</p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <div class="d-flex justify-content-center">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-11">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="card  p-3" style="width: 18rem;">
-                                <img alt="..." class="card-img-top"
-                                    src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                                <div class="card-body text-center">
-                                    <p class="card-title  mb-3">abcdefg</p>
-                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                    <div class="d-flex justify-content-center">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
         </div>
     </section>
+
+    <section id="mobtest" class="d-lg-none d-xl-none d-xxl-none p-5">
+        <h2 class="common-heading text-center">What Client Say<br>About Us</h2>
+        <hr class="w-25 mx-auto mb-3">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card  p-3" style="width: 18rem;">
+                            <img alt="..." class="card-img-top"
+                                src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                            <div class="card-body text-center">
+                                <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                <div class=" mt-3 d-flex justify-content-center px-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-regular.svg" class="w-25 p-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card  p-3" style="width: 18rem;">
+                            <img alt="..." class="card-img-top"
+                                src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                            <div class="card-body text-center">
+                                <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                <div class=" mt-3 d-flex justify-content-center px-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-regular.svg" class="w-25 p-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card  p-3" style="width: 18rem;">
+                            <img alt="..." class="card-img-top"
+                                src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                            <div class="card-body text-center">
+                                <p class="card-title  mb-3">Lorem, ipsum dolor</p>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Qui, quos. Lorem, ipsum dolor sit amet consectetur .</p>
+                                <div class=" mt-3 d-flex justify-content-center px-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-solid.svg" class="w-25 p-2">
+                                    <img src="./images/star-regular.svg" class="w-25 p-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <section id="tip" class="bg-white p-4 mt-2">
+        <div class="container text-center text-dark">
+            <h2 class="fw-bold">Tips and Tricks From <br>Our Exparts</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4 col-12 d-flex justify-content-center align-items-center mb-2">
+                    <div class="card shadow border-0 d-flex justify-content-center align-items-center"
+                        style="width: 18rem;">
+                        <img alt="" class="card-img-top w-50" src="./images/seo.gif">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small text-grey ">5000 </p>
+                                <p class="small text-grey "> March 11, 2022 </p>
+                            </div>
+                            <h5 class="card-title mt-3">Backend Development</h5>
+                            <p class="card-text mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <a class="px-4 py-2 btn btn-dark" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 mb-2 d-flex justify-content-center align-items-center">
+                    <div class="card shadow border-0 d-flex justify-content-center align-items-center"
+                        style="width: 18rem;">
+                        <img alt="" class="card-img-top w-50" src="./images/phone.gif">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small text-grey ">6000 </p>
+                                <p class="small text-grey "> March 11, 2023 </p>
+                            </div>
+                            <h5 class="card-title mt-3">App Development</h5>
+                            <p class="card-text mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <a class="px-4 py-2 btn btn-dark" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 mb-2 d-flex justify-content-center align-items-center">
+                    <div class="card shadow border-0 d-flex justify-content-center align-items-center"
+                        style="width: 18rem;">
+                        <img alt="" class="card-img-top w-50" src="./images/speaker.gif">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small text-grey ">9000 </p>
+                                <p class="small text-grey "> March 11, 2024 </p>
+                            </div>
+                            <h5 class="card-title mt-3">Web Development</h5>
+                            <p class="card-text mt-2 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <a class="px-4 py-2 btn btn-dark" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="position-relative">
+        <div class="custom-shape-divider-top-1684211116 w-100 position-absolute top-0">
+            <svg data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    style="fill: #ffffff;"></path>
+            </svg>
+        </div>
+        <div class="text-center fw-bold">
+            <div class="py-5"></div>
+            <h2 class="text-white fw-bold">Contact Us</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container px-3">
+            <div>
+                <form class="w-75 m-auto">
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label" for="first-name">First name</label>
+                                <input class="form-control" id="first-name" placeholder="First name"
+                                    aria-label="First name" type="text" required>
+                            </div>
+                            <div class="col">
+                                <label for="last-name" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="Last name"
+                                    aria-label="Last name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" required
+                            placeholder="Enter your email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" required
+                            placeholder="Enter your message " rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-white text-dark mt-5">
+            <div class="container px-4">
+                <div class="row">
+                    <div class="col-4 ">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                <img src="./images/map.gif" alt="GIF Image" class="img-fluid w-50">
+                            </div>
+                            <p>(+00) 1234 5678</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4 ">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                <img src="./images/map.gif" alt="GIF Image" class="img-fluid w-50">
+                            </div>
+                            <p>(+00) 1234 5678</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4 ">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                <img src="./images/map.gif" alt="GIF Image" class="img-fluid w-50">
+                            </div>
+                            <p>(+00) 1234 5678</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container mt-2">
+                    <div class="row w-100 d-flex justify-content-center align-items-top">
+                        <div class="col-md-2 col-4 ms-4">
+                                <h4 class="text-dark mb-3">About</h4>
+                                <ul class="text-light-grey list-unstyled d-flex flex-column gap-2">
+                                    <li>lorem</li>
+                                    <li>lorem</li>
+                                </ul>
+                            </div>
+
+                        <div class="col-md-2 col-4">
+                                <h4 class="text-dark mb-3">Quick</h4>
+                                <ul class="text-light-grey list-unstyled d-flex flex-column gap-2">
+                                    <li>lorem</li>
+                                    <li>lorem</li>
+                                    <li>lorem</li>
+                                </ul>
+                            </div>
+
+                        <div class="col-md-2 col-3">
+                                <h4 class="text-dark mb-3">Links</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2">
+                                    <li>lorem</li>
+                                    <li>lorem</li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-5 col-12">
+                                <h4 class="mb-3 text-dark">Subscribe</h4>
+                                <div class="input-group mb-3 w-100">
+                                    <input type="text" class="form-control" placeholder="Recipient's username"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <span class="input-group-text btn btn-primary" id="basic-addon2">Subscribe</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <hr class="container mx-auto" />
+                <div class="col-12 text-center pb-1">
+                    <p style="font-size: smaller;">Copyright ©2024 All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 
