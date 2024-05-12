@@ -37,3 +37,7 @@
         #footer{
             font-size: small;
         }
+        #testimonial .card,
+        #mobtest .card{
+            width: 18rem;
+        }
