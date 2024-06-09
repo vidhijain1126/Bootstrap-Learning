@@ -7,17 +7,16 @@
             transform: rotate(180deg);
             z-index: -1;
             padding: 0px;
+            margin: 0px;
         }
         .custom-shape-divider-bottom-1714980762 svg {
             position: relative;
             width: calc(100% + 1.3px);
-            height: 15%;
+            height: 14%;
         }
-        .custom-shape-divider-bottom-1714980762 .shape-fill {
-            fill: #FFFFFF;
-        }
-        #hero {
-            height: 90vh;
+        #hero,
+        #contact-us{
+            height: 80vh;
         }
         .crd-shadow:hover {
             box-shadow: 0 00.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -28,7 +27,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            overflow: hidden;
         }
         .card:hover{
             background-color: blueviolet;
@@ -43,5 +41,13 @@
         }
         #testimonial .card,
         #mobtest .card{
-            width: 18rem;
+            width: 19rem;
         }
+        .small-font{
+            font-size: smaller;
+        }
+        input::placeholder,
+        textarea::placeholder{
+            font-size: small;
+        }
+        
