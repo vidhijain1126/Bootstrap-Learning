@@ -19,8 +19,8 @@ To run this project, follow these steps:
 This project is a fusion of all the important components needed to create a wonderful website.
 
 ## Screenshot of project
-![Screenshot of the project](bootstrap demo.png)
-![Screenshot of the project](bootstrap3.png)
-![Screenshot of the project](bootstrap 2.png)
+![Screenshot of the project](images/bootstrapDemo.png)
+![Screenshot of the project](images/bootstrap3.png)
+![Screenshot of the project](images/bootstrap2.png)
 
 Exploring the project!
