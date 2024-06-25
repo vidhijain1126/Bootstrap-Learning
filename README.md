@@ -18,4 +18,9 @@ To run this project, follow these steps:
 - **Objective**: To demonstrate the smooth working and clean design using Bootstrap's features
 This project is a fusion of all the important components needed to create a wonderful website.
 
+## Screenshot of project
+![Screenshot of the project](bootstrap demo.png)
+![Screenshot of the project](bootstrap3.png)
+![Screenshot of the project](bootstrap 2.png)
+
 Exploring the project!
